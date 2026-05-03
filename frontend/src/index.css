@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  @variant sm {
+    padding-inline: 2rem;
+  }
+
+  width: 100%;
+
+  @media (width >= 40rem /* sm */) {
+    max-width: 40rem;
+  }
+  @media (width >= 48rem /* md */) {
+    max-width: 48rem;
+  }
+  @media (width >= 64rem /* lg */) {
+    max-width: 64rem;
+  }
+  @media (width >= 80rem /* xl */) {
+    max-width: 80rem;
+  }
+  @media (width >= 96rem /* 2xl */) {
+    max-width: 96rem;
+  }
+}
