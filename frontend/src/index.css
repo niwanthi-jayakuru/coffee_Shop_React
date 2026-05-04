@@ -1,10 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #270c03;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #270c03;
+  }
+
+  #root {
+    min-height: 100vh;
+    background-color: #270c03;
+  }
+}
+
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-cursive: "Pacifico", cursive;
+
+  --color-primary: #854d3d;
+  --color-secondary: #4a1e1b;
+  --color-brand-dark: #270c03;
+  --color-accent: #c4956a;
 }
 
 @utility container {
